@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WFShareChooseView" customModule="niinfor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YFn-Vh-gQG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3X-8d-L41" userLabel="分享">
+                    <rect key="frame" x="270" y="108" width="105" height="44"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="ETb-qv-ghE"/>
+                        <constraint firstAttribute="height" constant="44" id="dhX-0U-VVK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="分享">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZXA-EN-9Kv">
+                    <rect key="frame" x="270" y="108" width="105" height="1"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="spE-uo-azq"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVx-qB-yRF" userLabel="新建病例">
+                    <rect key="frame" x="270" y="64" width="105" height="44"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="HNg-1R-fhN"/>
+                        <constraint firstAttribute="width" constant="105" id="kEj-DI-6Rw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="新建病例">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZXA-EN-9Kv" firstAttribute="top" secondItem="IVx-qB-yRF" secondAttribute="bottom" id="32N-7d-9Ng"/>
+                <constraint firstItem="IVx-qB-yRF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="5T2-by-1DH"/>
+                <constraint firstItem="YFn-Vh-gQG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hrr-iX-Fdk"/>
+                <constraint firstItem="ZXA-EN-9Kv" firstAttribute="trailing" secondItem="Z3X-8d-L41" secondAttribute="trailing" id="KGC-Jl-LC5"/>
+                <constraint firstItem="Z3X-8d-L41" firstAttribute="trailing" secondItem="IVx-qB-yRF" secondAttribute="trailing" id="TLc-NI-cXp"/>
+                <constraint firstAttribute="trailing" secondItem="IVx-qB-yRF" secondAttribute="trailing" id="XmH-Dj-fFr"/>
+                <constraint firstAttribute="bottom" secondItem="YFn-Vh-gQG" secondAttribute="bottom" id="bda-Nk-H5d"/>
+                <constraint firstAttribute="trailing" secondItem="YFn-Vh-gQG" secondAttribute="trailing" id="e7C-lR-245"/>
+                <constraint firstItem="Z3X-8d-L41" firstAttribute="top" secondItem="IVx-qB-yRF" secondAttribute="bottom" id="pCV-4z-eZa"/>
+                <constraint firstItem="YFn-Vh-gQG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u45-ok-yba"/>
+                <constraint firstItem="ZXA-EN-9Kv" firstAttribute="width" secondItem="Z3X-8d-L41" secondAttribute="width" id="zXA-co-3Xl"/>
+            </constraints>
+            <connections>
+                <outlet property="newCaseBtn" destination="IVx-qB-yRF" id="sHC-4q-CQT"/>
+                <outlet property="shareBtn" destination="Z3X-8d-L41" id="zqO-0Q-3MG"/>
+            </connections>
+        </view>
+    </objects>
+</document>

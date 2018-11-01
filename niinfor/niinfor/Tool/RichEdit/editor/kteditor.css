@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'ktfont';
+  src: url('ktfont.eot');
+  src: url('ktfont.eot?#iefix') format('embedded-opentype'),
+  url('ktfont.woff') format('woff'),
+  url('ktfont.ttf') format('truetype'),
+  url('ktfont.svg#ktfont') format('svg');
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0 solid transparent;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: auto;
+}
+
+body,html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #fff;
+	font-family: PingFangSC-light;
+    overflow: scroll;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height:100%;
+}
+
+body {
+	overflow: hidden;
+	overflow-y: scroll;
+	vertical-align: baseline!important;
+	line-height: 1.8!important;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
+}
+
+h1,h3,h5,p {
+	margin: 0!important;
+	padding: 0!important;
+	vertical-align: baseline!important;
+	font-weight: 400;
+	line-height: 1.8!important;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h3,p {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+ol,ul {
+	margin: 0;
+	padding: 0;
+	line-height: 1.8em;
+}
+
+ol {
+	counter-reset: item;
+}
+
+ol li,ul li {
+	margin: 0;
+	padding: 0 0 0 1em;
+	list-style: none;
+	line-height: 1.8em;
+	page-break-inside: auto;
+}
+
+ol li:before {
+	display: inline-block;
+	margin: 0 .1em 0 -1.2em;
+	min-width: 1em;
+	content: counter(item) '.';
+	counter-increment: item;
+	text-align: center;
+	font-size: inherit;
+}
+
+ul li:before {
+	display: inline-block;
+	margin: 0 .1em 0 -1.2em;
+	width: 1em;
+	content: '\2022';
+	text-align: center;
+	text-align: center;
+	text-indent: 0!important;
+	font-size: inherit;
+}
+
+*,:active,:focus {
+	outline: 0!important;
+	-webkit-tap-highlight-color: transparent!important;
+	-webkit-focus-ring-color: transparent!important;
+	-webkit-appearance: none;
+}
+
+a {
+	display: inline-block;
+	overflow: hidden;
+	color: #2887f0;
+	vertical-align: top;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-tap-highlight-color: transparent!important;
+	-webkit-focus-ring-color: transparent!important;
+}
+
+a:before {
+	display: inline-block;
+	margin-right: 0px;
+	margin-left: 3px;
+	color: #2887f0;
+	content: '\e7e2';
+	vertical-align: top;
+	font-family: ktfont;
+}
+
+.frame-head {
+	display: none;
+}
+
+#my_editor {
+  display: table-cell;
+  outline: 0px solid transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#my_editor[placeholder]:empty:not(:focus):before {
+  content: attr(placeholder);
+  opacity: .5;
+}}
+
+.editor {
+	overflow: auto;
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 400px;
+	padding-left: 10px;
+	height: auto;
+	min-height: 300px;
+	white-space: pre-wrap;
+	word-break: break-all;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.editor div {
+	margin: 0!important;
+	padding: 0!important;
+	vertical-align: baseline!important;
+	font-weight: 400;
+	line-height: 1.8!important;
+}
+
+.editor-bottom {
+	position: relative;
+	z-index: 1;
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	background-color: rgba(0,0,0,0);
+}
+
+.frame-head {
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	display: block;
+	display: none;
+	height: 80px;
+	background-color: #000;
+}
+
+.frame-head .menus {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	height: 80px;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.menus>li {
+	margin: 0;
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #333;
+	border-radius: 3px;
+	background-color: #222;
+	color: #fff;
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.menus>li:before {
+	display: none;
+	margin: 0;
+	padding: 0;
+	content: '';
+}
+
+.menus>li.abs-sel {
+	border-color: #aaa;
+	background-color: #fff;
+	color: #000;
+	font-weight: 700;
+	font-size: 20px;
+}

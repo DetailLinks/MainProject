@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/xiaofeiwang/JieRuZiXun/niinfor/&#x795e;&#x7ecf;&#x4ecb;&#x5165;&#x8d44;&#x8baf;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

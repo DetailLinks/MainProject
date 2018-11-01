@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WFCaseDiscussViewController" customModule="niinfor" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationBarConstant" destination="Wg7-6U-8Te" id="iJH-uT-Kvr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCs-ZO-tsF">
+                    <rect key="frame" x="0.0" y="64" width="375" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VQI-LW-qgo">
+                            <rect key="frame" x="0.0" y="12.5" width="187.5" height="17"/>
+                            <state key="normal" image="case discussion_icon_list">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="专科排序 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.24705882352941178" green="0.61176470588235299" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="flG-2D-quG">
+                            <rect key="frame" x="186.5" y="2" width="1" height="38"/>
+                            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="cuj-GQ-3b5"/>
+                                <constraint firstAttribute="height" constant="38" id="qxU-DL-9bn"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fWQ-nK-Xf9">
+                            <rect key="frame" x="187.5" y="12.5" width="187.5" height="17"/>
+                            <state key="normal" image="case discussion_icon_list">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="时间排序 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.24705882352941178" green="0.61176470588235299" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fWQ-nK-Xf9" firstAttribute="leading" secondItem="VQI-LW-qgo" secondAttribute="trailing" id="1Bw-ev-Cei"/>
+                        <constraint firstItem="fWQ-nK-Xf9" firstAttribute="width" secondItem="VQI-LW-qgo" secondAttribute="width" id="390-1Y-QaT"/>
+                        <constraint firstAttribute="trailing" secondItem="fWQ-nK-Xf9" secondAttribute="trailing" id="FmX-oC-g9c"/>
+                        <constraint firstItem="fWQ-nK-Xf9" firstAttribute="height" secondItem="VQI-LW-qgo" secondAttribute="height" id="IgR-rg-DAY"/>
+                        <constraint firstItem="flG-2D-quG" firstAttribute="centerY" secondItem="eCs-ZO-tsF" secondAttribute="centerY" id="Ohn-KO-KIO"/>
+                        <constraint firstItem="VQI-LW-qgo" firstAttribute="leading" secondItem="eCs-ZO-tsF" secondAttribute="leading" id="QyX-Hq-bhV"/>
+                        <constraint firstItem="VQI-LW-qgo" firstAttribute="centerY" secondItem="eCs-ZO-tsF" secondAttribute="centerY" id="S4u-fF-7yJ"/>
+                        <constraint firstItem="flG-2D-quG" firstAttribute="leading" secondItem="VQI-LW-qgo" secondAttribute="trailing" constant="-1" id="U5O-Mw-CuU"/>
+                        <constraint firstItem="fWQ-nK-Xf9" firstAttribute="centerY" secondItem="eCs-ZO-tsF" secondAttribute="centerY" id="fG1-Ec-UTt"/>
+                        <constraint firstAttribute="height" constant="42" id="qxo-6D-4NK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eCs-ZO-tsF" secondAttribute="trailing" id="4g5-8E-FQ1"/>
+                <constraint firstItem="eCs-ZO-tsF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Wg7-6U-8Te"/>
+                <constraint firstItem="eCs-ZO-tsF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ntw-ly-rjR"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="case discussion_icon_list" width="7" height="9"/>
+    </resources>
+</document>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<script type="text/javascript" src="jquery3.1.1.min.js"></script>
+	<link rel="stylesheet" href="default.css" />
+	<link rel="stylesheet" href="photoswipe.css">
+	<link rel="stylesheet" href="photoswipe-skin.css">
+	<script type='text/javascript' src="photoswipe.min.js" charset='utf-8'></script>
+	<script type='text/javascript' src="photoswipe-ui-default.min.js" charset='utf-8'></script>
+	<style >
+@font-face {
+  font-family: 'ktfont';
+  src: url('ktfont.eot');
+  src: url('ktfont.eot?#iefix') format('embedded-opentype'),
+  url('ktfont.woff') format('woff'),
+  url('ktfont.ttf') format('truetype'),
+  url('ktfont.svg#ktfont') format('svg');
+}
+.link:before {
+	display: inline-block;
+	margin-right: 0px;
+	margin-left: 3px;
+	content: '\e7e2';
+	vertical-align: center;
+	font-family: ktfont;
+}
+.link{
+	color: #2887f0;
+}
+	</style>
+	<title></title>
+	<script>
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth;
+						if(docEl.clientWidth <= docEl.clientHeight) {
+							clientWidth = docEl.clientWidth;
+						} else {
+							clientWidth = docEl.clientHeight;
+						};
+
+						if(!clientWidth) return;
+						if(clientWidth >= 750) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+						}
+					};
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	<style>
+
+	</style>
+</head>
+
+<body>
+<div class="main_div">
+	<div class="content ">
+		<div class="content_top">
+			<div class="title_text">
+				<div class="text_title"></div>
+			</div>
+			<div class="title">
+				<div class="title_img">
+					<img src="" />
+				</div>
+				<div class="title_name">
+					<label></label>
+					<span></span>
+				</div>
+			</div>
+
+		</div>
+		<div class="circulation gallery"></div>
+	</div>
+</div>
+<div class="backimg"></div>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+			var arrs = ___JSON__DATA___;
+			(function() {
+				var arr = arrs.html;
+				if(arrs.image !== "" && arrs.image !== undefined) {
+					$(".title_img img").attr("src", arrs.image)
+				} else {
+					$(".title_img").hide()
+				};
+				if(arrs.name !== "" && arrs.name !== undefined) {
+					$(".title_name label").text(arrs.name);
+				} else {
+					$(".title_name label").hide()
+				};
+				if(arrs.job !== "" && arrs.job !== undefined) {
+					$(".title_name span").text(arrs.job);
+				} else {
+					$(".title_name span").hide()
+				};
+				if(arrs.title !== "" && arrs.title !== undefined) {
+					$(".text_title").text(arrs.title);
+				} else {
+					$(".title_text").hide()
+				};
+
+				for(var i = 0; i < arr.length; i++) {
+					var list = "";
+					if(arr[i].type === "img") {
+						list += '<div class="img_box"><div class="img_img">';
+						if(arr[i].src !== "" && arr[i].src !== undefined) {
+							list += '<img src=' + arr[i].src + ' />';
+							if(arr[i].text !== "" && arr[i].text !== undefined) {
+								list += '<div class="img_text img_text_top">' + arr[i].text + '</div></div></div>';
+							} else {
+								list += '</div></div>';
+							};
+						} else {
+							list += '<div class="img_text">' + arr[i].text + '</div></div></div>';
+						};
+					};
+					if(arr[i].type === "text") {
+						if(arr[i].text !== "" && arr[i].text !== undefined) {
+							list += '<div class="text_box">' + arr[i].text + '</div>'
+						};
+					};
+					if(arr[i].type === "audio") {
+						list += '<div class="audio_box"><audio class="audio" src=' + arr[i].src + ' controls="controls"></audio>';
+						if(arr[i].text !== "" && arr[i].text !== undefined) {
+							list += '<div class="img_text img_text_top">' + arr[i].text + '</div></div>';
+						} else {
+							list += '</div>';
+						};
+					};
+					if(arr[i].type === "video") {
+						list += '<div class="video_box"><video src=' + arr[i].src + ' controls="controls"  class="video"';
+						if(arr[i].poster !== "" && arr[i].poster !== undefined) {
+							list += 'poster=' + arr[i].poster + ' style="object-fit: contain;" ></video>';
+
+						} else {
+							list += '</video>';
+						};
+						if(arr[i].text !== "" && arr[i].text !== undefined) {
+							list += '<div class="img_text">' + arr[i].text + '</div></div>';
+						} else {
+							list += '</div>';
+						};
+
+					};
+					$(".circulation").append(list);
+				}
+			})()
+			$(function() {
+				var initPhotoSwiper = function(gallerySelector) {
+					//图片点击事件
+					var onPhotoClick = function(e) {
+						if(e.srcElement.nodeName.toUpperCase() !== 'IMG') {
+							return;
+						}
+						e = e || window.event;
+						e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+						//点击对象
+						var target = e.target || e.srcElement;
+
+						//找到点击图片，如果没有找到直接返回
+						var clickedPhoto = closest(target, function(el) {
+							return(el.tagName && el.tagName.toLowerCase() === 'img');
+						});
+
+						if(!clickedPhoto) {
+							return;
+						}
+
+						//找到点击图片所在相册，如果没有找到直接返回
+						var clickedGallery = closest(clickedPhoto, function(el) {
+							return el.attributes.hasOwnProperty("data-pswp-uid");
+						});
+
+						if(!clickedGallery) {
+							return;
+						}
+
+						//计算点击图片的索引
+						var photos = clickedGallery.querySelectorAll('img'),
+							temp = 0,
+							index;
+
+						for(var i = 0, l = photos.length; i < l; i++) {
+							if(photos[i].nodeType !== 1) {
+								continue;
+							}
+
+							if(photos[i] === clickedPhoto) {
+								index = temp;
+								break;
+							}
+							temp++;
+						}
+
+						//打开图片查看器
+						if(index >= 0) {
+							openPhotoSwiper(index, clickedGallery);
+						}
+
+						return false;
+					};
+
+					//寻找最近的父节点
+					var closest = function closest(el, fn) {
+						return el && (fn(el) ? el : closest(el.parentNode, fn));
+					};
+
+					//打开图片查看器
+					var openPhotoSwiper = function(index, galleryElement, disableAnimation, fromUrl) {
+						//解析图片
+						var items = parsePhotos(galleryElement);
+
+						//设置选项
+						var options = {
+							galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+							mainClass: 'pswp--minimal--dark',
+							barsSize: {
+								top: 0,
+								bottom: 0
+							},
+							captionEl: false,
+							fullscreenEl: false,
+							shareEl: false,
+							closeEl: false,
+							bgOpacity: 1,
+							tapToClose: true,
+							tapToToggleControls: false
+						};
+
+						if(fromUrl) {
+							if(options.galleryPIDs) {
+								for(var j = 0; j < items.length; j++) {
+									if(items[j].pid === index) {
+										options.index = j;
+										break;
+									}
+								}
+							} else {
+								options.index = parseInt(index, 10) - 1;
+							}
+						} else {
+							options.index = parseInt(index, 10);
+						}
+
+						//图片索引不正确时，直接返回
+						if(isNaN(options.index)) {
+							return;
+						}
+
+						if(disableAnimation) {
+							options.showAnimationDuration = 0;
+						}
+
+						//启动图片查看器
+						var pswpElement = document.querySelectorAll('.pswp')[0];
+						var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+						gallery.init();
+					};
+
+					//解析图片
+					var parsePhotos = function(el) {
+						var photos = el.querySelectorAll('img'),
+							items = [];
+
+						for(var i = 0, l = photos.length; i < l; i++) {
+							var width = null,
+								height = null;
+
+							//微信
+							var dataSize = photos[i].getAttribute('data-s');
+							var dataRatio = photos[i].getAttribute('data-ratio');
+							if(dataSize && dataRatio) {
+								width = parseInt(dataSize.split(',')[1]);
+								height = width * parseFloat(dataRatio);
+							}
+
+							//本地上传
+							if(!width || !height) {
+								width = photos[i].clientWidth;
+								height = photos[i].clientHeight;
+							}
+
+							var item = {
+								src: photos[i].getAttribute('src'),
+								w: width || 640,
+								h: height || 300
+							};
+							items.push(item);
+						}
+
+						return items;
+					};
+
+					//解析URL中的相册ID和图片ID
+					var parseHash = function() {
+						var hash = window.location.hash.substring(1),
+							params = {};
+
+						if(hash.length < 5) {
+							return params;
+						}
+
+						var vars = hash.split('&');
+						for(var i = 0; i < vars.length; i++) {
+							if(!vars[i]) {
+								continue;
+							}
+
+							var pair = vars[i].split('=');
+							if(pair.length < 2) {
+								continue;
+							}
+
+							params[pair[0]] = pair[1];
+						}
+
+						if(params.gid) {
+							params.gid = parseInt(params.gid, 10);
+						}
+
+						return params;
+					};
+
+					//设置计数器的位置
+					var counter = document.querySelector('.pswp__counter');
+					counter.style.left = (document.documentElement.clientWidth - 55) / 2 + 'px';
+					counter.style.top = (document.documentElement.clientHeight - 44) + 'px';
+
+					//对相册进行分组
+					var galleries = document.querySelectorAll(gallerySelector);
+					for(var i = 0, l = galleries.length; i < l; i++) {
+						galleries[i].setAttribute('data-pswp-uid', i + 1);
+						galleries[i].onclick = onPhotoClick;
+					}
+
+					//解析URL，打开指定图片
+					var hashData = parseHash();
+					if(hashData.pid && hashData.gid) {
+						openPhotoSwiper(hashData.pid, galleries[hashData.gid - 1], true, true);
+					}
+				};
+
+				initPhotoSwiper('.gallery')
+			});
+		</script>
+
+</body>
+
+</html>

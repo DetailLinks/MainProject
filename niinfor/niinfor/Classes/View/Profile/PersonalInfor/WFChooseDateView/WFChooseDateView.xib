@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WFChooseDateView" customModule="niinfor" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="W6G-wT-fyu" customClass="WFChooseDateView" customModule="niinfor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fxp-QY-WVG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJ9-c4-Aut">
+                    <rect key="frame" x="0.0" y="417" width="375" height="250"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1E-NM-YEp">
+                            <rect key="frame" x="0.0" y="193" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="qha-nP-eeD"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDa-Vs-cSM">
+                            <rect key="frame" x="187.5" y="194" width="187.5" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="lbV-xa-E0P"/>
+                            </constraints>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="确定">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name=".PingFangSC-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2L-lN-HcS">
+                            <rect key="frame" x="0.0" y="194" width="187.5" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="H2D-oe-ilq"/>
+                            </constraints>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="取消">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                        </button>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pnh-Vc-utF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="193"/>
+                            <date key="date" timeIntervalSinceReferenceDate="525950466.59149301">
+                                <!--2017-09-01 09:21:06 +0000-->
+                            </date>
+                            <date key="minimumDate" timeIntervalSinceReferenceDate="-2556190800">
+                                <!--1920-01-01 11:00:00 +0000-->
+                            </date>
+                            <locale key="locale" localeIdentifier="zh"/>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Pnh-Vc-utF" firstAttribute="top" secondItem="VJ9-c4-Aut" secondAttribute="top" id="4FB-pI-hAJ"/>
+                        <constraint firstItem="e1E-NM-YEp" firstAttribute="top" secondItem="Pnh-Vc-utF" secondAttribute="bottom" id="7wy-i3-Y6d"/>
+                        <constraint firstItem="t2L-lN-HcS" firstAttribute="leading" secondItem="VJ9-c4-Aut" secondAttribute="leading" id="7zn-7r-tPF"/>
+                        <constraint firstAttribute="trailing" secondItem="XDa-Vs-cSM" secondAttribute="trailing" id="ALe-OM-O3m"/>
+                        <constraint firstItem="XDa-Vs-cSM" firstAttribute="top" secondItem="e1E-NM-YEp" secondAttribute="bottom" id="CVH-ue-abH"/>
+                        <constraint firstAttribute="bottom" secondItem="t2L-lN-HcS" secondAttribute="bottom" id="KoF-aV-B1O"/>
+                        <constraint firstItem="e1E-NM-YEp" firstAttribute="leading" secondItem="VJ9-c4-Aut" secondAttribute="leading" id="RRE-L3-7Uw"/>
+                        <constraint firstAttribute="height" constant="250" id="Sts-2i-ZJ3"/>
+                        <constraint firstAttribute="trailing" secondItem="e1E-NM-YEp" secondAttribute="trailing" id="VwJ-uj-xFm"/>
+                        <constraint firstItem="XDa-Vs-cSM" firstAttribute="height" secondItem="t2L-lN-HcS" secondAttribute="height" id="ard-pa-YOD"/>
+                        <constraint firstItem="Pnh-Vc-utF" firstAttribute="leading" secondItem="VJ9-c4-Aut" secondAttribute="leading" id="jVG-Qm-sOF"/>
+                        <constraint firstAttribute="trailing" secondItem="Pnh-Vc-utF" secondAttribute="trailing" id="kuw-N7-V2H"/>
+                        <constraint firstAttribute="bottom" secondItem="XDa-Vs-cSM" secondAttribute="bottom" id="mAA-DA-Rli"/>
+                        <constraint firstItem="XDa-Vs-cSM" firstAttribute="width" secondItem="t2L-lN-HcS" secondAttribute="width" id="pWW-Ph-hbe"/>
+                        <constraint firstItem="XDa-Vs-cSM" firstAttribute="leading" secondItem="t2L-lN-HcS" secondAttribute="trailing" id="qq0-Pm-cn0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VJ9-c4-Aut" secondAttribute="trailing" id="6YH-GV-lig"/>
+                <constraint firstAttribute="trailing" secondItem="fxp-QY-WVG" secondAttribute="trailing" id="F5z-69-jfk"/>
+                <constraint firstAttribute="bottom" secondItem="fxp-QY-WVG" secondAttribute="bottom" id="IDc-p5-XNB"/>
+                <constraint firstItem="fxp-QY-WVG" firstAttribute="top" secondItem="W6G-wT-fyu" secondAttribute="top" id="IFA-uh-LsA"/>
+                <constraint firstAttribute="bottom" secondItem="VJ9-c4-Aut" secondAttribute="bottom" id="M7Y-8c-kcO"/>
+                <constraint firstItem="fxp-QY-WVG" firstAttribute="leading" secondItem="W6G-wT-fyu" secondAttribute="leading" id="agz-b3-uLh"/>
+                <constraint firstItem="VJ9-c4-Aut" firstAttribute="leading" secondItem="W6G-wT-fyu" secondAttribute="leading" id="rfL-0s-7ke"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelBtn" destination="t2L-lN-HcS" id="QuP-Ns-gt0"/>
+                <outlet property="datePicker" destination="Pnh-Vc-utF" id="cXZ-Jw-4x7"/>
+                <outlet property="ensureBtn" destination="XDa-Vs-cSM" id="q84-d3-Ttb"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="70.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="206" id="KGk-i7-Jjw" customClass="WFRecordVideoCell" customModule="niinfor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="205.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPk-lM-GtG">
+                        <rect key="frame" x="10" y="12.5" width="365" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Ko1-hN-kPC"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="江浙皖户很精肿瘤精准医疗专家论坛">
+                                <attributes>
+                                    <font key="NSFont" size="17" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceP-pD-lhG">
+                        <rect key="frame" x="122" y="38.5" width="36" height="17"/>
+                        <attributedString key="attributedText">
+                            <fragment content="   肿瘤">
+                                <attributes>
+                                    <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFh-Fz-WCv">
+                        <rect key="frame" x="10" y="40.5" width="112" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="I13-ad-fOa"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="2017.07.28 12:09:40">
+                                <attributes>
+                                    <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsr-hv-Oh9">
+                        <rect key="frame" x="158" y="38.5" width="60" height="17"/>
+                        <attributedString key="attributedText">
+                            <fragment content="   神经介入">
+                                <attributes>
+                                    <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_img_thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="iEb-sb-sqt">
+                        <rect key="frame" x="10" y="62.5" width="365" height="139"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iEb-sb-sqt" secondAttribute="height" multiplier="710:270" id="UIt-Hl-tHY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ceP-pD-lhG" firstAttribute="leading" secondItem="gFh-Fz-WCv" secondAttribute="trailing" id="0Jg-3b-Ggr"/>
+                    <constraint firstItem="gFh-Fz-WCv" firstAttribute="leading" secondItem="kPk-lM-GtG" secondAttribute="leading" id="1SE-q3-hjv"/>
+                    <constraint firstItem="kPk-lM-GtG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="3er-q4-ai6"/>
+                    <constraint firstItem="ceP-pD-lhG" firstAttribute="centerY" secondItem="gFh-Fz-WCv" secondAttribute="centerY" id="41h-T4-eE3"/>
+                    <constraint firstItem="kPk-lM-GtG" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" constant="-20" id="5da-tc-bMV"/>
+                    <constraint firstItem="iEb-sb-sqt" firstAttribute="width" secondItem="iEb-sb-sqt" secondAttribute="height" multiplier="710:270" id="GAL-j3-XyG"/>
+                    <constraint firstItem="iEb-sb-sqt" firstAttribute="width" secondItem="kPk-lM-GtG" secondAttribute="width" id="GP7-HH-nC0"/>
+                    <constraint firstItem="gFh-Fz-WCv" firstAttribute="top" secondItem="kPk-lM-GtG" secondAttribute="bottom" constant="4" id="Igt-lb-yER"/>
+                    <constraint firstItem="iEb-sb-sqt" firstAttribute="leading" secondItem="gFh-Fz-WCv" secondAttribute="leading" id="LBX-X2-902"/>
+                    <constraint firstItem="Fsr-hv-Oh9" firstAttribute="centerY" secondItem="gFh-Fz-WCv" secondAttribute="centerY" id="Vwe-Vo-6Un"/>
+                    <constraint firstItem="iEb-sb-sqt" firstAttribute="top" secondItem="gFh-Fz-WCv" secondAttribute="bottom" constant="8" id="XBX-ku-Gw7"/>
+                    <constraint firstItem="Fsr-hv-Oh9" firstAttribute="leading" secondItem="ceP-pD-lhG" secondAttribute="trailing" id="gH5-hz-R3k"/>
+                    <constraint firstItem="kPk-lM-GtG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="oB4-oa-05c"/>
+                    <constraint firstItem="iEb-sb-sqt" firstAttribute="width" secondItem="kPk-lM-GtG" secondAttribute="width" id="s2f-7c-w8n"/>
+                    <constraint firstAttribute="trailing" secondItem="kPk-lM-GtG" secondAttribute="trailing" constant="10" id="sBh-mp-dx9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentImageView" destination="iEb-sb-sqt" id="nMp-WL-kfP"/>
+                <outlet property="firstRankLabel" destination="ceP-pD-lhG" id="CvB-ZV-2Rm"/>
+                <outlet property="secondLabel" destination="Fsr-hv-Oh9" id="ZGn-Dc-4Ny"/>
+                <outlet property="timeLabel" destination="gFh-Fz-WCv" id="7fy-j6-Sj5"/>
+                <outlet property="titleLabel" destination="kPk-lM-GtG" id="YMT-II-Qqo"/>
+            </connections>
+            <point key="canvasLocation" x="74.5" y="107"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="video_img_thumbnail" width="355" height="134"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WFSearchViewContoller" customModule="niinfor" customModuleProvider="target">
+            <connections>
+                <outlet property="navigaitonBarConstant" destination="RC2-KW-0CW" id="4ej-vE-f8h"/>
+                <outlet property="searchBar" destination="BwS-8b-s9l" id="Dxd-bd-owq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gF8-2Z-Aw7" userLabel="searchBar">
+                    <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" placeholder="请输入关键词查询" translatesAutoresizingMaskIntoConstraints="NO" id="BwS-8b-s9l">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <color key="barTintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BwS-8b-s9l" firstAttribute="top" secondItem="gF8-2Z-Aw7" secondAttribute="top" id="Dqb-On-ZBG"/>
+                        <constraint firstItem="BwS-8b-s9l" firstAttribute="leading" secondItem="gF8-2Z-Aw7" secondAttribute="leading" id="PLe-ox-McH"/>
+                        <constraint firstAttribute="trailing" secondItem="BwS-8b-s9l" secondAttribute="trailing" id="c7z-vr-sG0"/>
+                        <constraint firstAttribute="height" constant="56" id="y9c-wf-cGX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gF8-2Z-Aw7" secondAttribute="trailing" id="KhT-2e-uvr"/>
+                <constraint firstItem="gF8-2Z-Aw7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="RC2-KW-0CW"/>
+                <constraint firstItem="gF8-2Z-Aw7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="in0-xJ-nmh"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

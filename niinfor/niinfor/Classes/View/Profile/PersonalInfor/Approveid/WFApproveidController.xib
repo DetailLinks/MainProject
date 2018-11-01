@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WFApproveidController" customModule="niinfor" customModuleProvider="target">
+            <connections>
+                <outlet property="uploadBtn" destination="2Us-36-Ggt" id="0mV-cN-tb7"/>
+                <outlet property="uploadImageView" destination="MVs-B9-ath" id="VnD-Nu-8t6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="417-VF-kCT">
+                    <rect key="frame" x="10" y="100" width="42" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="证件照">
+                            <attributes>
+                                <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组 140" translatesAutoresizingMaskIntoConstraints="NO" id="rAM-eu-G4r">
+                    <rect key="frame" x="52" y="98.5" width="9" height="23"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-36-Ggt">
+                    <rect key="frame" x="70.5" y="100" width="233" height="150"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="titleEdgeInsets" minX="-36" minY="25" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="56" minY="-30" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="icon_uploading">
+                        <attributedString key="attributedTitle">
+                            <fragment content="点击上传">
+                                <attributes>
+                                    <color key="NSColor" red="0.24705882352941178" green="0.61176470588235299" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="uploadBtnClick:" destination="-1" eventType="touchUpInside" id="Aw4-Fp-Kcp"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MVs-B9-ath">
+                    <rect key="frame" x="71" y="100" width="233" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MVs-B9-ath" secondAttribute="height" multiplier="233:150" id="HW7-Jk-9Dq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8qw-1T-aXX">
+                    <rect key="frame" x="70.5" y="331" width="233" height="37"/>
+                    <color key="backgroundColor" red="0.24705882352941178" green="0.61176470588235299" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="完成">
+                                <attributes>
+                                    <color key="NSColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="18" name="PingFangSC-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="accomplishBtnClick:" destination="-1" eventType="touchUpInside" id="ywC-4c-ysh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1p4-vS-MXf">
+                    <rect key="frame" x="70.5" y="258" width="233" height="39.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="请上传您的医师/护士资格证书、医院胸卡、学生证或其他证件照片">
+                            <attributes>
+                                <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rAM-eu-G4r" firstAttribute="leading" secondItem="417-VF-kCT" secondAttribute="trailing" id="108-tn-Pwy"/>
+                <constraint firstItem="417-VF-kCT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="78w-JF-v1w"/>
+                <constraint firstItem="8qw-1T-aXX" firstAttribute="width" secondItem="1p4-vS-MXf" secondAttribute="width" id="7Zg-hm-XNZ"/>
+                <constraint firstItem="8qw-1T-aXX" firstAttribute="centerX" secondItem="1p4-vS-MXf" secondAttribute="centerX" id="Br8-EU-hWU"/>
+                <constraint firstItem="2Us-36-Ggt" firstAttribute="centerY" secondItem="MVs-B9-ath" secondAttribute="centerY" id="G3N-EO-Zus"/>
+                <constraint firstItem="2Us-36-Ggt" firstAttribute="width" secondItem="MVs-B9-ath" secondAttribute="width" id="HNS-go-wxv"/>
+                <constraint firstItem="MVs-B9-ath" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="621:1000" id="Q95-TP-5Gn"/>
+                <constraint firstItem="1p4-vS-MXf" firstAttribute="leading" secondItem="2Us-36-Ggt" secondAttribute="leading" id="Qv2-ky-1Ul"/>
+                <constraint firstItem="1p4-vS-MXf" firstAttribute="top" secondItem="2Us-36-Ggt" secondAttribute="bottom" constant="8" id="XDe-6b-kgD"/>
+                <constraint firstItem="417-VF-kCT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="ZST-qz-Dnf"/>
+                <constraint firstItem="8qw-1T-aXX" firstAttribute="leading" secondItem="1p4-vS-MXf" secondAttribute="leading" id="b5J-iU-9QJ"/>
+                <constraint firstItem="1p4-vS-MXf" firstAttribute="centerX" secondItem="2Us-36-Ggt" secondAttribute="centerX" id="bSG-p9-aKo"/>
+                <constraint firstItem="1p4-vS-MXf" firstAttribute="width" secondItem="2Us-36-Ggt" secondAttribute="width" id="fQS-lg-OBI"/>
+                <constraint firstItem="417-VF-kCT" firstAttribute="centerY" secondItem="rAM-eu-G4r" secondAttribute="centerY" id="i8B-K5-KYu"/>
+                <constraint firstItem="MVs-B9-ath" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iOg-UU-fma"/>
+                <constraint firstItem="2Us-36-Ggt" firstAttribute="centerX" secondItem="MVs-B9-ath" secondAttribute="centerX" id="lAe-UK-Ffe"/>
+                <constraint firstItem="MVs-B9-ath" firstAttribute="top" secondItem="417-VF-kCT" secondAttribute="top" id="swe-ci-bd3"/>
+                <constraint firstItem="2Us-36-Ggt" firstAttribute="height" secondItem="MVs-B9-ath" secondAttribute="height" id="vtu-kk-dfC"/>
+                <constraint firstItem="8qw-1T-aXX" firstAttribute="top" secondItem="2Us-36-Ggt" secondAttribute="bottom" constant="81" id="wP3-NX-Y0l"/>
+            </constraints>
+            <point key="canvasLocation" x="15" y="51"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_uploading" width="39" height="32"/>
+        <image name="组 140" width="9" height="23"/>
+    </resources>
+</document>

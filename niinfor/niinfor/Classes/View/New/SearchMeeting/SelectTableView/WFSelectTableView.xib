@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hck-ca-aY4" customClass="WFSelectTableView" customModule="niinfor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yro-yr-OSz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="7Wi-38-Tsa"/>
+                    </constraints>
+                </tableView>
+                <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVh-ug-9oO">
+                    <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yro-yr-OSz" firstAttribute="top" secondItem="Hck-ca-aY4" secondAttribute="top" id="9AH-Pl-zNR"/>
+                <constraint firstAttribute="trailing" secondItem="YVh-ug-9oO" secondAttribute="trailing" id="Z6w-nW-zJI"/>
+                <constraint firstItem="YVh-ug-9oO" firstAttribute="top" secondItem="yro-yr-OSz" secondAttribute="bottom" id="bVG-Yv-7JF"/>
+                <constraint firstAttribute="bottom" secondItem="YVh-ug-9oO" secondAttribute="bottom" id="ebH-Dk-rvO"/>
+                <constraint firstItem="yro-yr-OSz" firstAttribute="leading" secondItem="Hck-ca-aY4" secondAttribute="leading" id="n4g-OH-Hrg"/>
+                <constraint firstItem="YVh-ug-9oO" firstAttribute="leading" secondItem="Hck-ca-aY4" secondAttribute="leading" id="pGL-BW-Z3a"/>
+                <constraint firstAttribute="trailing" secondItem="yro-yr-OSz" secondAttribute="trailing" id="xHl-98-Hgj"/>
+            </constraints>
+            <connections>
+                <outlet property="selectTableView" destination="yro-yr-OSz" id="ELp-gX-tHP"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="-25"/>
+        </view>
+    </objects>
+</document>

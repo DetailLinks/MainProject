@@ -1,0 +1,82 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, ‘8.0’
+
+target 'niinfor' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for niinfor
+
+pod 'JPush'
+pod "AFNetworking"
+pod "SDWebImage"
+pod "YYModel"
+#pod "FMDB"
+pod "SVProgressHUD"
+pod "pop"
+pod "MJRefresh"
+pod 'IQKeyboardManager'
+pod ‘Bugly’
+
+pod "TZImagePickerController"
+
+pod "YYText"
+
+# 轮播图
+pod 'SDCycleScrollView','~> 1.66'
+#pod 'JSBridge', '~> 0.2.6'
+
+#Umeng 分享
+
+#新版分享
+#基础组件
+pod 'UMCCommon'
+pod 'UMCSecurityPlugins'
+
+#统计
+pod 'UMCAnalytics'
+
+#日志调试
+pod 'UMCCommonLog'
+
+
+#pod 'UMengAnalytics-NO-IDFA'
+
+# U-Share SDK UI模块（分享面板，建议添加）
+pod ‘UMengUShare/UI’
+
+# 集成微信(精简版0.2M)
+pod ‘UMengUShare/Social/ReducedWeChat'
+
+# 集成微信(完整版14.4M)
+#pod ‘UMengUShare/Social/WeChat'
+
+# 集成QQ/QZone/TIM(精简版0.5M)
+pod ‘UMengUShare/Social/ReducedQQ'
+
+# 集成QQ/QZone/TIM(完整版7.6M)
+#pod ‘UMengUShare/Social/QQ'
+
+# 集成新浪微博(精简版1M)
+#pod ‘UMengUShare/Social/ReducedSina'
+
+# 集成新浪微博(完整版25.3M)
+#pod ‘UMengUShare/Social/Sina'
+
+pod 'RxSwift', '~> 3.6.1'
+pod 'RxCocoa', '~> 3.6.1'
+pod 'SnapKit', '~> 3.2.0'
+
+#添加图片处理工具
+pod 'ZLPhotoBrowser'
+
+#pod 'RichEditorView'
+
+pod 'YYImage'
+#pod 'ZQImageEdit'
+pod 'CLImageEditor'
+pod 'RealmSwift'
+
+#pod 'AliyunPlayer_iOS/AliyunVodPlayerSDK'
+#pod 'AliyunPlayer_iOS/AliyunVodPlayerViewSDK'
+end

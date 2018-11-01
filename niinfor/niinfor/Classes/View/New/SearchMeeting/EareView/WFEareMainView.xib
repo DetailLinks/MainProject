@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="l89-q3-BOd" customClass="WFEareMainView" customModule="niinfor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-G8-rGw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="439"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-t2-ULw">
+                    <rect key="frame" x="0.0" y="439" width="375" height="228"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="RgO-t2-ULw" firstAttribute="leading" secondItem="l89-q3-BOd" secondAttribute="leading" id="1au-Fe-66K"/>
+                <constraint firstAttribute="bottom" secondItem="RgO-t2-ULw" secondAttribute="bottom" id="1fh-3G-ns1"/>
+                <constraint firstItem="RgO-t2-ULw" firstAttribute="top" secondItem="ITK-G8-rGw" secondAttribute="bottom" id="Amp-8i-pfp"/>
+                <constraint firstItem="ITK-G8-rGw" firstAttribute="top" secondItem="l89-q3-BOd" secondAttribute="top" id="WLV-6c-hyb"/>
+                <constraint firstItem="ITK-G8-rGw" firstAttribute="height" secondItem="l89-q3-BOd" secondAttribute="height" multiplier="658:1000" id="WnL-lo-J1z"/>
+                <constraint firstAttribute="trailing" secondItem="RgO-t2-ULw" secondAttribute="trailing" id="bH3-LC-d0i"/>
+                <constraint firstItem="ITK-G8-rGw" firstAttribute="leading" secondItem="l89-q3-BOd" secondAttribute="leading" id="c5t-hf-a8x"/>
+                <constraint firstItem="ITK-G8-rGw" firstAttribute="width" secondItem="l89-q3-BOd" secondAttribute="width" id="dLU-H1-W5J"/>
+                <constraint firstAttribute="trailing" secondItem="ITK-G8-rGw" secondAttribute="trailing" id="tLl-nC-KFA"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="ITK-G8-rGw" id="9f1-CN-Zud"/>
+            </connections>
+            <point key="canvasLocation" x="-13.5" y="25.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,292 @@
+body,
+html,
+div,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+a,
+input,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	font-style: normal;
+	font-weight: normal;
+}
+
+html {
+	height: 100%;
+	width: 100%
+}
+
+body {
+	font-family: "微软雅黑";
+	height: 100%;
+	width: 100%;
+	background: #f5f5f5;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+	border: 0;
+}
+
+.main_div {
+	position: relative;
+	z-index: 0;
+	/*background-image: url(../img/ztl_bg.png);*/
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	/*background-color: #c1b0fa;*/
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: .4rem;
+}
+
+.content {
+	margin: 0 .4rem;
+	/*background: rgba(0, 0, 0, .4);*/
+	min-height: 100%;
+}
+
+.title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	overflow: hidden;
+	padding-top: .5rem;
+}
+
+.title_img {
+	height: 1rem;
+	width: 1rem;
+	-webkit-border-radius: 1.65rem;
+	border-radius: 1.65rem;
+	overflow: hidden;
+	margin-right: .4rem;
+}
+
+.title_name {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.title_name label {
+	color: #333333;
+	font-size: .3rem;
+}
+
+.title_name span {
+	height: .38rem;
+	background: #FFB300;
+	-webkit-border-radius: .5rem;
+	border-radius: .5rem;
+	font-size: .22rem;
+	color: #FFFFFF;
+	padding: .01rem .13rem;
+	margin-left: .3rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+
+/*.title_text,
+			.patient_text,
+			.img_box,
+			.video_box,
+			.audio_box,
+			.text_box {
+				padding: .3rem .35rem .3rem;
+				background: #FFFFFF;
+				-webkit-border-radius: .08rem;
+				border-radius: .08rem;
+				background: RGBA(255, 255, 255, 0.6);
+			}*/
+
+.patient_text {
+	margin-top: .74rem;
+}
+
+.text_title {
+	color: #333333;
+	font-size: .44rem;
+	font-weight: bold;
+	margin-top: .5rem;
+}
+
+.patient_xx {
+	color: #333333;
+	font-size: .32rem;
+}
+
+.img_box,
+.video_box,
+.audio_box,
+.text_box {
+	margin-top: .51rem;
+}
+
+.img_img img {
+	width: 100%;
+}
+
+.img_text {
+	color: #333333;
+	font-size: .32rem;
+}
+
+.img_text_top {
+	margin-top: .38rem;
+	padding-bottom: .4rem;
+}
+
+.img_text_bottom {
+	margin-bottom: .38rem;
+}
+
+.video {
+	width: 100%;
+	height: 4.5rem;
+	background: #000000;
+	overflow: hidden;
+}
+
+.audio {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: .24rem;
+	overflow: hidden;
+}
+
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display {
+	display: none;
+}
+
+.main-box .main-box .section .text a {
+	display: inline;
+	padding: 0 5px;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+	display: none;
+}
+
+video::-internal-media-controls-download-button {
+	display: none;
+}
+
+video::-webkit-media-controls--download-button {
+	display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+	overflow: hidden;
+}
+
+audio::-internal-media-controls-download-button {
+	display: none;
+}
+
+audio::-webkit-media-controls-enclosure {
+	overflow: hidden;
+}
+
+audio::-webkit-media-controls-panel {
+	width: -webkit-calc(100% + 33px);
+	width: calc(100% + 33px);
+}
+
+.text_box {
+	font-size: .28rem;
+}
+
+.circulation ol {
+	counter-reset: item;
+}
+
+.circulation ul li,
+.circulation ol li {
+	list-style: none;
+	/*padding: 0 0 0 19.2px;*/
+	page-break-inside: auto;
+}
+
+.circulation ol li:before {
+	display: inline-block;
+	content: counter(item) ".";
+	counter-increment: item;
+	font-size: inherit;
+	min-width: .5rem;
+	/*margin: 0 .1rem 0 -1.2rem;*/
+	text-align: center;
+}
+
+.circulation ul li:before {
+	display: inline-block;
+	content: '•';
+	width: 1em;
+	/*margin: 0 .1em 0 -1.2em;*/
+	font-size: inherit;
+	text-align: center;
+	text-indent: 0 !important;
+	text-align: center;
+}
